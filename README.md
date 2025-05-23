@@ -4,15 +4,15 @@ Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang tela
 ## Permasalahan Bisnis
 Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
 ## Cakupan Proyek
-Setelah memahami permasalahan yang dihadapi, maka dibutuhkan kumpulan data terkait yang dapat dianalisa dan diimplementasikan ke dalam ML tasks hingga menghasilkan sebuah dataset baru dengan label status yang menyeluruh melalui model klasifikasi yang telah diuji. Lalu mulai membangun dashboard untuk membantu Jaya Jaya Institut dalam memahami data dan memonitor performa siswa. Selain itu juga mengembangkan solusi machine learning yang siap digunakan oleh user dalam bentuk prototype yang dibuat menggunakan streamlit dan menghubungkan prototype tersebut dengan Streamlit Community Cloud sehingga ia dapat dijalankan pada environment cloud dan diakses secara remote. 
+Setelah memahami permasalahan yang dihadapi, maka mengumpulkan data terkait yang dapat dianalisa dan diimplementasikan ke dalam ML tasks hingga menghasilkan sebuah dataset baru dengan label status yang menyeluruh melalui model klasifikasi yang telah diuji. Lalu mulai membangun dashboard untuk membantu Jaya Jaya Institut dalam memahami data dan memonitor performa siswa. Selain itu juga mengembangkan solusi machine learning tersebut yang siap digunakan oleh user dalam bentuk prototype yang dibuat menggunakan streamlit dan menghubungkan prototype tersebut dengan Streamlit Community Cloud sehingga ia dapat dijalankan pada environment cloud dan diakses secara remote. 
 ## Persiapan
-Sumber Data : Dataset yang dibuat dari lembaga pendidikan tinggi yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Dataset tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial-ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus kuliah (dropout) dan keberhasilan akademik (graduate) mahasiswa. [source link](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
+Sumber Data : Dataset yang dibuat dari lembaga pendidikan tinggi yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Dataset tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial-ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus kuliah (dropout) dan keberhasilan akademik (graduate) mahasiswa. [link](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
 Setup Environment :
 
     a. Setup Environment - Anaconda
-        - Create an environment: conda create --name emp-attr python=3.11
-        - Activate the environment: conda activate emp-attr
+        - Create an environment: conda create --name std-perform python=3.11
+        - Activate the environment: conda activate std-perform
         - Install library: pip install -r requirements.txt
         - launch jupyter notebook
         - executing ML tasks
@@ -91,3 +91,5 @@ ML tasks :
         - Curricular units 2nd semester (evaluations) : 0-10
 
 #### Rekomendasi Aksi
+1. Early warning system: Identifikasi mahasiswa berisiko DO (IP rendah, sering absen, tidak aktif).
+2. Kirimkan notifikasi ke mahasiswa dan dosen wali jika ada penurunan performa akademik.
