@@ -1,15 +1,12 @@
 # Proyek Akhir : Menyelesaikan Permasalahan Institusi Pendidikan
 ## Business Understanding
 Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
-Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
 ## Permasalahan Bisnis
-
-    
+Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
 ## Cakupan Proyek
-
-  
+Setelah memahami permasalahan yang dihadapi, maka dibutuhkan kumpulan data terkait yang dapat dianalisa dan diimplementasikan ke dalam ML tasks hingga menghasilkan sebuah dataset baru dengan label status yang menyeluruh melalui model klasifikasi yang telah diuji. Lalu mulai membangun dashboard untuk membantu Jaya Jaya Institut dalam memahami data dan memonitor performa siswa. Selain itu juga mengembangkan solusi machine learning yang siap digunakan oleh user dalam bentuk prototype yang dibuat menggunakan streamlit dan menghubungkan prototype tersebut dengan Streamlit Community Cloud sehingga ia dapat dijalankan pada environment cloud dan diakses secara remote. 
 ## Persiapan
-Sumber Data : Data berisi rincian demografi, metrik terkait pekerjaan, dan attrition flag berupa label 0 dan 1 [source link](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)
+Sumber Data : Dataset yang dibuat dari lembaga pendidikan tinggi yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Dataset tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial-ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus kuliah (dropout) dan keberhasilan akademik (graduate) mahasiswa. [source link](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
 Setup Environment :
 
@@ -26,6 +23,14 @@ Setup Environment :
         - Pilih Blank Report
         - Add data to report: CSV File Upload
 
+    c. Setup web app - streamlit framework
+        - Buat script .py melalui code editor (saya menggunakan spyder)
+        - Import library streamlit dan dependencies lainnya
+        - Load model yang telah disimpan setelah menyelesaikan ML tasks
+        - Terapkan top 8 fitur penting yang dibutuhkan model sebagai interaksi user
+        - Lakukan prediksi status mahasiswa melalui interaksi tombol
+        - Jika app berhasil running, deploy ke Streamlit Community Cloud
+
 ML tasks :
 
     a. Data Collection dan Data Understanding
@@ -39,11 +44,12 @@ ML tasks :
     h. Penyimpanan model : format .pkl
     i. Implementasi model : prediksi status mahasiswa
     j. Penyimpanan dataset hasil prediksi : exporting CSV File untuk visualisasi dashboard
+    g. Deployment : create status prediction web app dengan tool streamlit
 
 ## Business Dashboard
 
   Student's Performance Dashboard ini dibuat menggunakan [Looker Studio](https://lookerstudio.google.com/reporting/c1276d50-2499-4481-82b2-cd34b7226983).
-  Top 8 fitur penting yang mempengaruhi model, yang mana akan kita fokuskan pada visualisasi dalam dashboard antara lain: 
+  Top 8 fitur penting yang mempengaruhi prediksi status student's academic performance oleh model, yang mana akan kita fokuskan pada visualisasi dalam dashboard antara lain: 
   
     1. Curricular_units_1st_sem_approved
     2. Tuition_fees_up_to_date
@@ -56,8 +62,32 @@ ML tasks :
 
 #### Kesimpulan
     a. Secara umum, sebagian besar mahasiswa:
-    
+        - Gender : Female
+        - Age at enrollment : 15-20
+        - Marital status : Single
+        - Top 3 courses : Nursing, Management, Social Service
+        - Status student's academic performance : Graduate
+        - Tuition fees up to date : Yes
+        - Application mode : 1st phase - general contingent
+        - Admission grade : 100-150
+        - Scholarship holder : No
+        - Debtor : No
+        - Previous qualification grade : 100-150
+        - Curricular units 1st semester (approved) : 0-10
+        - Curricular units 2nd semester (evaluations) : 0-10
+        
     b. Dropout sebesar 39,8% atau sebanyak 1762 orang, didominasi oleh:
-
+        - Gender : Female
+        - Age at enrollment : 15-20
+        - Marital status : Single
+        - Top 3 courses : Management, Management (evening attendance), Veterinary nursing
+        - Tuition fees up to date : Yes
+        - Application mode : Over 23 years old
+        - Admission grade : 100-150
+        - Scholarship holder : No
+        - Debtor : No
+        - Previous qualification grade : 100-150
+        - Curricular units 1st semester (approved) : 0-10
+        - Curricular units 2nd semester (evaluations) : 0-10
 
 #### Rekomendasi Aksi
