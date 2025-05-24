@@ -6,7 +6,7 @@ Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar un
 ## Cakupan Proyek
 Setelah memahami permasalahan yang dihadapi, maka kita kumpulkan data yang diperlukan dan memahaminya sehingga dapat memformulasikan masalah menjadi bentuk ML tasks hingga menghasilkan sebuah dataset baru dengan label status yang lengkap melalui model klasifikasi terbaik yang telah diuji. Dataset baru tersebut digunakan membangun dashboard untuk membantu Jaya Jaya Institut dalam memahami data dan memonitor performa siswa dengan menggunakan Looker Studio sebagai BI tool-nya. Selain itu juga mengembangkan solusi machine learning yang siap digunakan oleh user dalam bentuk prototype yang dibuat menggunakan streamlit dan menghubungkan prototype tersebut dengan Streamlit Community Cloud sehingga ia dapat dijalankan pada environment cloud dan diakses secara remote. 
 ## Persiapan
-Sumber Data : Dataset yang dibuat dari lembaga pendidikan tinggi yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Dataset tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial-ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus kuliah (dropout) dan keberhasilan akademik (graduate) mahasiswa. [link](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
+[Sumber Data](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md) : Dataset yang dibuat dari lembaga pendidikan tinggi yang terkait dengan mahasiswa yang terdaftar dalam berbagai gelar sarjana, seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Dataset tersebut mencakup informasi yang diketahui pada saat pendaftaran mahasiswa (jalur akademik, demografi, dan faktor sosial-ekonomi) dan kinerja akademik mahasiswa pada akhir semester pertama dan kedua. Data tersebut digunakan untuk membangun model klasifikasi guna memprediksi putus kuliah (dropout) dan keberhasilan akademik (graduate) mahasiswa.
 
 Setup Environment :
 
@@ -45,6 +45,8 @@ ML tasks :
     i. Implementasi model : prediksi status mahasiswa
     j. Penyimpanan dataset hasil prediksi : exporting CSV File untuk visualisasi dashboard
     g. Deployment : create status prediction web app dengan tool streamlit
+
+Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https://studentsperformance-endahrakhma.streamlit.app/)
 
 ## Business Dashboard
 
