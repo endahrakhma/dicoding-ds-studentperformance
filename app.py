@@ -64,11 +64,11 @@ with st.container():
      
     with col1:
            
-        Admission_grade = int(st.number_input(label='Admission_grade', value=50.3))
+        Admission_grade = float(st.number_input(label='Admission_grade', value=50.3))
         data["Admission_grade"] = Admission_grade
      
     with col2:
-        Previous_qualification_grade = int(st.number_input(label='Previous_qualification_grade', value=150.5))
+        Previous_qualification_grade = float(st.number_input(label='Previous_qualification_grade', value=150.5))
         data["Previous_qualification_grade"] = Previous_qualification_grade
 
 with st.container():    
