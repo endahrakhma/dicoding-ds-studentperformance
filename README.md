@@ -95,8 +95,9 @@ Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https:/
 #### Rekomendasi Aksi
 1. Early warning system: Identifikasi mahasiswa berisiko DO (admission grade dan previous qualification grade bernilai kecil hingga menengah).
 2. SKS mahasiswa pada semester 1 yang diambil jumlahnya sedikit, akan membutuhkan waktu jauh lebih lama untuk lulus. Hal ini bisa menyebabkan kelelahan mental, frustrasi, dan hilangnya motivasi. Dampak lainnya masa studi yang makin panjang maka biaya hidup dan kuliah semakin besar, apalagi mahasiswa bukan penerima beasiswa ataupun tidak mau jadi peminjam (debitur) dengan tuition fees yang up to date (biaya kuliah terkini).
-3. SKS mahasiswa pada semester 2 yang disetujui untuk diambil jumlahnya sedikit, maka akan membatasi peluang mahasiswa memperbaiki IPK secara cepat. Mahasiswa yang hanya diizinkan mengambil sedikit SKS karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
-4. Memberi kelas remedial/mata kuliah pengganti antarsemester agar mahasiswa bisa memperbaiki IP dan menambah SKS.
-5. Pendampingan intensif bagi mahasiswa berisiko agar mereka bisa kembali ke jalur normal. Buat program asistensi atau mentoring akademik (senior membimbing junior)
-6. Pada 3 mata kuliah/kursus teratas yang banyak mengalami dropout, pihak kampus perlu melakukan survey mahasiswa: kesulitan materi, metode ajar, beban tugas, atau gaya mengajar dosen. Jika perlu, rotasi dosen pengampu atau hadirkan dosen tamu/praktisi sebagai pendamping.
-7. Tinjau ulang apakah beban SKS, cakupan materi, dan prasyarat mata kuliah sudah sesuai. Pecah mata kuliah besar jadi dua tahap (misal: "Matematika Lanjut 1" dan "2").
+3. Meringankan beban finansial agar mahasiswa bisa fokus menyelesaikan kuliah dengan memberikan kemudahan administratif seperti potongan biaya kuliah, cicilan UKT, atau penghapusan denda keterlambatan.
+4. SKS mahasiswa pada semester 2 yang disetujui untuk diambil jumlahnya sedikit, maka akan membatasi peluang mahasiswa memperbaiki IPK secara cepat. Mahasiswa yang hanya diizinkan mengambil sedikit SKS karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
+5. Memberi kelas remedial/mata kuliah pengganti antarsemester agar mahasiswa bisa memperbaiki IP dan menambah SKS.
+6. Pendampingan intensif bagi mahasiswa berisiko agar mereka bisa kembali ke jalur normal. Buat program asistensi atau mentoring akademik (senior membimbing junior)
+7. Pada 3 mata kuliah/kursus teratas yang banyak mengalami dropout, pihak kampus perlu melakukan survey mahasiswa: kesulitan materi, metode ajar, beban tugas, atau gaya mengajar dosen. Jika perlu, rotasi dosen pengampu atau hadirkan dosen tamu/praktisi sebagai pendamping.
+8. Tinjau ulang apakah beban SKS, cakupan materi, dan prasyarat mata kuliah sudah sesuai. Pecah mata kuliah besar jadi dua tahap (misal: "Matematika Lanjut 1" dan "2").
