@@ -21,17 +21,21 @@ Setup Environment :
         - Kunjungi: https://lookerstudio.google.com
         - Signing with google account
         - Pilih Blank Report
-        - Add data to report: CSV File Upload
+        - Add data to report: CSV File Upload (dataset baru : studentperformance_final.csv)
 
-    c. Setup web app - streamlit framework
-        - Buat script .py melalui code editor (saya menggunakan spyder)
+    c. Menjalankan Sistem Machine Learning
+        - Buat script python filename app.py melalui code editor (saya menggunakan spyder)
         - Import library streamlit dan dependencies lainnya
         - Load model yang telah disimpan setelah menyelesaikan ML tasks
         - Terapkan top 8 fitur penting yang dibutuhkan model sebagai interaksi user
         - Lakukan prediksi status mahasiswa melalui interaksi tombol
-        - Jika app berhasil running, deploy ke Streamlit Community Cloud
+        - Running di lokal : streamlit run app.py
+        - Siapkan file requirements.txt berisi library sekaligus versinya yang digunakan untuk membangun aplikasi tersebut
+        - Jika berhasil running di lokal, deploy ke Streamlit Community Cloud
+    
+Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https://studentsperformance-endahrakhma.streamlit.app/)
 
-ML tasks :
+Detail ML tasks :
 
     a. Data Collection dan Data Understanding
     b. Exploratory Data Analysis (EDA) : univariate analysis
@@ -43,13 +47,10 @@ ML tasks :
     h. Membuat pipeline model yang digunakan
     h. Penyimpanan model : format .pkl
     i. Implementasi model : prediksi status mahasiswa
-    j. Penyimpanan dataset hasil prediksi : exporting CSV File untuk visualisasi dashboard
+    j. Penyimpanan dataset baru : exporting CSV File untuk visualisasi dashboard
     g. Deployment : create status prediction web app dengan tool streamlit
 
-Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https://studentsperformance-endahrakhma.streamlit.app/)
-
 ## Business Dashboard
-
   Student's Performance Dashboard ini dibuat menggunakan [Looker Studio](https://lookerstudio.google.com/reporting/c1276d50-2499-4481-82b2-cd34b7226983).
   Top 8 fitur penting yang mempengaruhi prediksi status student's academic performance oleh model, yang mana akan kita fokuskan pada visualisasi dalam dashboard antara lain: 
   
@@ -63,41 +64,43 @@ Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https:/
     8. Previous_qualification_grade
 
 #### Kesimpulan
-    a. Secara umum, sebagian besar mahasiswa:
+    a. Total mahasiswa 4424 orang, terdiri dari graduate sebanyak 2662 orang (60.2%) dan dropout sebanyak 1762 orang (39.8%).
+        Didominasi oleh:
         - Gender : Female
         - Age at enrollment : 15-20
         - Marital status : Single
         - Top 3 courses : Nursing, Management, Social Service
-        - Status student's academic performance : Graduate
         - Tuition fees up to date : Yes
-        - Application mode : 1st phase - general contingent
-        - Admission grade : 100-150
         - Scholarship holder : No
         - Debtor : No
+        - Application mode : 1st phase - general contingent
+        - Admission grade : 100-150
         - Previous qualification grade : 100-150
         - Curricular units 1st semester (approved) : 0-10
         - Curricular units 2nd semester (evaluations) : 0-10
         
-    b. Dropout sebesar 39,8% atau sebanyak 1762 orang, didominasi oleh:
+    b. Dropout sebesar 39.8% atau sebanyak 1762 orang, didominasi oleh:
         - Gender : Female
-        - Age at enrollment : 15-20
-        - Marital status : Single
-        - Top 3 courses : Management, Management (evening attendance), Veterinary nursing
-        - Tuition fees up to date : Yes
         - Application mode : Over 23 years old
-        - Admission grade : 100-150
+        - Tuition fees up to date : Yes
         - Scholarship holder : No
         - Debtor : No
-        - Previous qualification grade : 100-150
+        
+        Persentase dropout diatas graduate atau lebih dari 50%:
+        - Age at enrollment diatas 20 tahun
+        - Marital status selain Single
+        - Kursus Management
+        - Admission grade : 50-100
+        - Previous qualification grade : 50-100
         - Curricular units 1st semester (approved) : 0-10
-        - Curricular units 2nd semester (evaluations) : 0-10
-
-#### Rekomendasi Aksi
-1. Early warning system: Identifikasi mahasiswa berisiko DO (admission grade dan previous qualification grade bernilai kecil hingga menengah).
-2. SKS mahasiswa pada semester 1 yang diambil jumlahnya sedikit, akan membutuhkan waktu jauh lebih lama untuk lulus. Hal ini bisa menyebabkan kelelahan mental, frustrasi, dan hilangnya motivasi. Dampak lainnya masa studi yang makin panjang maka biaya hidup dan kuliah semakin besar, apalagi mahasiswa bukan penerima beasiswa ataupun tidak mau jadi peminjam (debitur) dengan tuition fees yang up to date (biaya kuliah terkini).
-3. Meringankan beban finansial agar mahasiswa bisa fokus menyelesaikan kuliah dengan memberikan kemudahan administratif seperti potongan biaya kuliah, cicilan UKT, atau penghapusan denda keterlambatan.
-4. SKS mahasiswa pada semester 2 yang disetujui untuk diambil jumlahnya sedikit, maka akan membatasi peluang mahasiswa memperbaiki IPK secara cepat. Mahasiswa yang hanya diizinkan mengambil sedikit SKS karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
+        - Curricular units 2nd semester (evaluations) : 11-20
+        
+## Rekomendasi Aksi
+1. Early warning system: Identifikasi mahasiswa berisiko DO (admission grade dan previous qualification grade bernilai kecil 50-100).
+2. SKS mahasiswa pada semester 1 yang disetujui jumlahnya 0-10, akan membutuhkan waktu jauh lebih lama untuk lulus. Hal ini bisa menyebabkan kelelahan mental, frustrasi, dan hilangnya motivasi. Dampak lainnya masa studi yang makin panjang maka biaya hidup dan kuliah semakin besar, apalagi mahasiswa bukan penerima beasiswa ataupun tidak mau jadi peminjam (debitur) dengan tuition fees yang up to date (biaya kuliah terkini).
+3. Meringankan beban finansial agar mahasiswa (terutama age at enrollment diatas 20 tahun maupun yang pernikahannya problematik selain status single) bisa fokus menyelesaikan kuliah dengan memberikan kemudahan administratif seperti potongan biaya kuliah, cicilan UKT, atau penghapusan denda keterlambatan.
+4. Evaluasi SKS mahasiswa pada semester 2 yang berjumlah 0-10 jumlah dropout-nya diatas 50%, 11-20 jumlah dropout diatas graduate. Semakin banyak SKS yang dievaluasi semakin besar mahasiswa yang dropout. Peluang mahasiswa memperbaiki IPK secara cepat akan terbatas. Mahasiswa yang hanya diizinkan mengambil sedikit SKS pada semester 2 karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
 5. Memberi kelas remedial/mata kuliah pengganti antarsemester agar mahasiswa bisa memperbaiki IP dan menambah SKS.
 6. Pendampingan intensif bagi mahasiswa berisiko agar mereka bisa kembali ke jalur normal. Buat program asistensi atau mentoring akademik (senior membimbing junior)
-7. Pada 3 mata kuliah/kursus teratas yang banyak mengalami dropout, pihak kampus perlu melakukan survey mahasiswa: kesulitan materi, metode ajar, beban tugas, atau gaya mengajar dosen. Jika perlu, rotasi dosen pengampu atau hadirkan dosen tamu/praktisi sebagai pendamping.
+7. Pada kursus Management yang persentase dropout-nya lebih besar dari graduate (jurusan populer kedua), pihak kampus perlu melakukan survey mahasiswa: kesulitan materi, metode ajar, beban tugas, atau gaya mengajar dosen. Jika perlu, rotasi dosen pengampu atau hadirkan dosen tamu/praktisi sebagai pendamping.
 8. Tinjau ulang apakah beban SKS, cakupan materi, dan prasyarat mata kuliah sudah sesuai. Pecah mata kuliah besar jadi dua tahap (misal: "Matematika Lanjut 1" dan "2").
