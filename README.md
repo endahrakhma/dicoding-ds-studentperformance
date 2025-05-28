@@ -93,7 +93,7 @@ Detail ML tasks :
         - Admission grade : 50-100
         - Previous qualification grade : 50-100
         - Curricular units 1st semester (approved) : 0-10
-        - Curricular units 2nd semester (evaluations) : 11-20
+        - Curricular units 2nd semester (evaluations) : 0-10 dan 11-20
         
 ## Rekomendasi Aksi
 1. Early warning system: Identifikasi mahasiswa berisiko DO (admission grade dan previous qualification grade bernilai kecil 50-100 hingga sedang 100-150).
