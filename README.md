@@ -84,22 +84,22 @@ Detail ML tasks :
         - Tuition fees up to date : Yes
         - Scholarship holder : No
         - Debtor : No
+        - Curricular units 1st semester (approved) : 0-10
         
-        Persentase dropout diatas graduate atau lebih dari 50%:
+        Jumlah dropout diatas graduate atau persentase lebih dari 50%:
         - Age at enrollment diatas 25 tahun
         - Marital status selain Single
         - Kursus Management
         - Application mode : Over 23 years old
         - Admission grade : 50-100
         - Previous qualification grade : 50-100
-        - Curricular units 1st semester (approved) : 0-10
-        - Curricular units 2nd semester (evaluations) : 0-10 dan 11-20
+        - Curricular units 2nd semester (evaluations) : 11-20
         
 ## Rekomendasi Aksi
 1. Early warning system: Identifikasi mahasiswa berisiko DO (admission grade dan previous qualification grade bernilai kecil 50-100 hingga sedang 100-150).
 2. SKS mahasiswa pada semester 1 yang disetujui jumlahnya 0-10, akan membutuhkan waktu jauh lebih lama untuk lulus. Hal ini bisa menyebabkan kelelahan mental, frustrasi, dan hilangnya motivasi. Dampak lainnya masa studi yang makin panjang maka biaya hidup dan kuliah semakin besar, apalagi mahasiswa bukan penerima beasiswa ataupun tidak mau jadi peminjam (debitur) dengan tuition fees yang up to date (biaya kuliah terkini).
 3. Meringankan beban finansial agar mahasiswa (terutama age at enrollment diatas 25 tahun maupun yang pernikahannya problematik selain status single) bisa fokus menyelesaikan kuliah dengan memberikan kemudahan administratif seperti potongan biaya kuliah, cicilan UKT, atau penghapusan denda keterlambatan.
-4. Evaluasi SKS oleh mahasiswa pada semester 2 yang berjumlah 0-10 jumlah dropout-nya diatas 50%, sedangkan jumlah SKS 11-20 jumlah dropout diatas graduate. Semakin banyak SKS yang dievaluasi semakin besar mahasiswa yang dropout. Peluang mahasiswa memperbaiki IPK secara cepat akan terbatas. Mahasiswa yang hanya diizinkan mengambil sedikit SKS pada semester 2 karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
+4. Evaluasi SKS oleh mahasiswa pada semester 2 yang berjumlah 11-20 jumlah dropout diatas graduate. Semakin banyak SKS yang dievaluasi semakin besar mahasiswa yang dropout. Peluang mahasiswa memperbaiki IPK secara cepat akan terbatas. Mahasiswa yang hanya diizinkan mengambil sedikit SKS pada semester 2 karena IP rendah, akan kesulitan mengejar target lulus tepat waktu.
 5. Memberi kelas remedial/mata kuliah pengganti antarsemester agar mahasiswa bisa memperbaiki IP dan menambah SKS.
 6. Pendampingan intensif bagi mahasiswa berisiko agar mereka bisa kembali ke jalur normal. Buat program asistensi atau mentoring akademik (senior membimbing junior)
 7. Pada kursus Management yang persentase dropout-nya lebih besar dari graduate (kursus populer kedua), pihak kampus perlu melakukan survey mahasiswa: kesulitan materi, metode ajar, beban tugas, atau gaya mengajar dosen. Jika perlu, rotasi dosen pengampu atau hadirkan dosen tamu/praktisi sebagai pendamping.
