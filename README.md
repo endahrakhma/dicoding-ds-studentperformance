@@ -23,15 +23,15 @@ Setup Environment :
         - Pilih Blank Report
         - Add data to report: CSV File Upload (dataset baru : studentperformance_final.csv)
 
-    c. Menjalankan Sistem Machine Learning
-        - Buat script python filename app.py melalui code editor (saya menggunakan spyder)
-        - Import library streamlit dan dependencies lainnya
-        - Load model yang telah disimpan setelah menyelesaikan ML tasks
-        - Terapkan top 8 fitur penting yang dibutuhkan model sebagai interaksi user
-        - Lakukan prediksi status mahasiswa melalui interaksi tombol
-        - Running di lokal : streamlit run app.py
-        - Siapkan file requirements.txt berisi library sekaligus versinya yang digunakan untuk membangun aplikasi tersebut
-        - Jika berhasil running di lokal, deploy ke Streamlit Community Cloud
+## Menjalankan Sistem Machine Learning
+    - Buat script python filename app.py melalui code editor (saya menggunakan spyder)
+    - Import library streamlit dan dependencies lainnya
+    - Load model yang telah disimpan setelah menyelesaikan ML tasks
+    - Terapkan top 8 fitur penting yang dibutuhkan model sebagai interaksi user
+    - Lakukan prediksi status mahasiswa melalui interaksi tombol
+    - Running di lokal : streamlit run app.py
+    - Siapkan file requirements.txt berisi library sekaligus versinya yang digunakan untuk membangun aplikasi tersebut
+    - Jika berhasil running di lokal, deploy ke Streamlit Community Cloud
     
 Visit web app : [https://studentsperformance-endahrakhma.streamlit.app/](https://studentsperformance-endahrakhma.streamlit.app/)
 
@@ -81,7 +81,6 @@ Detail ML tasks :
         
     b. Dropout sebesar 39.8% atau sebanyak 1762 orang, didominasi oleh:
         - Gender : Female
-        - Application mode : Over 23 years old
         - Tuition fees up to date : Yes
         - Scholarship holder : No
         - Debtor : No
@@ -90,6 +89,7 @@ Detail ML tasks :
         - Age at enrollment diatas 20 tahun
         - Marital status selain Single
         - Kursus Management
+        - Application mode : Over 23 years old
         - Admission grade : 50-100
         - Previous qualification grade : 50-100
         - Curricular units 1st semester (approved) : 0-10
